@@ -17,6 +17,6 @@ jongleren = int(input("Hoeveel jaar ervaring heeft u met jongleren? "))
 acrobatiek = int(input("Hoeveel jaar praktijkervaring heeft u met acobatiek? "))
 
 if (diploma == "J") and (rijbewijs == "J") and (hoed == "J") and (geslacht == "man" and snor == "J" and snorlengte > 10 or geslacht == "vrouw" and kleur_haar == "rood" and haarlengte > 20) and (lengte > 150 and lengte < 220) and (gewicht > 90 and gewicht < 120) and (certificaat == "J") and (dieren_dressuur > 4 or jongleren > 5 or acrobatiek > 3):
-    print("Gallo")
+    print("U bent aangenomen")
 else:
     print("Sorry")
