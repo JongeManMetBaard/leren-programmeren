@@ -6,9 +6,16 @@ medium = 16.49
 large = 19.99
 
 # keuze
-small_pizza = int(input("Hoeveel small pizza's wilt u? "))
-medium_pizza = int(input("Hoeveel medium pizza's wilt u? "))
-large_pizza = int(input("Hoeveel large pizza's wilt u? "))
+
+def getInteger():
+    while True:
+        try:
+            small_pizza = getInteger(int(input("Hoeveel small pizza's wilt u? ")))
+            medium_pizza = getInteger(int(input("Hoeveel medium pizza's wilt u? ")))
+            large_pizza = int(input("Hoeveel large pizza's wilt u? "))
+            break
+        except ValueError:
+            print("Dat is geen nummer")
 
 # berekening totaal prijs
 small_total_price = small_pizza * small
