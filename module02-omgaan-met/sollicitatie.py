@@ -1,5 +1,10 @@
+naam = input("Wat is uw naam? ")
+if naam == "Mario":
+    raise NameError("Mario maakt lekker pizza's voor u")
 diploma = input("Bent u in bezit van een Diploma MBO-4 ondernemen? J/N ")
 rijbewijs = input("Heeft u een geldig Vrachtwagen rijbewijs? J/N ")
+if rijbewijs == "zeg ik niet":
+    raise Exception("De overheid gaat erachter komen")
 hoed = input("Heeft u een hoge hoed? J/N ")
 geslacht = input("Bent u een man of vrouw? man/vrouw ")
 if geslacht == "man":
@@ -8,6 +13,8 @@ if geslacht == "man":
         snorlengte = int(input("Hoe lang is uw snor in hele cm? "))
 elif geslacht == "vrouw":
     kleur_haar = input("Wat voor kleurhaar heeft u? ")
+    if kleur_haar == "groen":
+        raise NameError("Groener dan kiwi of groener dan een sperzieboon?")
     haarlengte = int(input("Hoe lang is uw haren in hele cm? "))
 lengte = int(input("Wat is uw lichaamslengte in hele cm? "))
 gewicht = int(input("Wat is uw lichaamsgewicht in hele kg? "))
